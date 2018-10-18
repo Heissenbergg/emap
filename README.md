@@ -1,6 +1,6 @@
-## emap web app 
+# eMap web applications 
 
-# Kategorije : 
+## Kategorije : 
 	1.  Prodaja i trgovina
 	2.  Ostalo
 	3.  Transport i logistika
