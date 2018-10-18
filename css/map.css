@@ -67,7 +67,15 @@
 
 /*Main background map style*/
 
-#map{
+#map_part{
+    position: fixed;
+    right: 0px;
+    top:42px;
+    width:calc(100% - 382px);
+    height: calc(100% - 42px);
+}
+
+#map_part #map{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -81,7 +89,66 @@
     display: none;
 }
 
+#map_part #details{position:absolute; top:0px; left:calc(100% - 800px); width:800px; height:100%; background:#fff; z-index:1200; transition: all 0.5s ease; border-left:2px solid rgba(0,0,0,0.1);}
+#map_part #details #exit_details{position:absolute; left:-40px; top:30px; width:40px; height:40px; background:#00FFDD; z-index:1200; transition: all 0.5s ease;}
+#map_part #details #exit_details:hover{cursor:pointer;}
+#map_part #details #exit_details img{position:absolute; left:0px; top:0px; right:0px; bottom:0px; width:20px; margin:auto;}
 
+/***** SEARCH BAR *****/
 
+/*#map_part #search_bar{*/
+    /*position: absolute;*/
+    /*bottom: 60px;*/
+    /*width:60%;*/
+    /*height: 120px;*/
+    /*left:20%;*/
+    /*background:rgba(0,0,0,0.6);*/
+    /*border-radius:3px;*/
+    /*z-index:1200;*/
+/*}*/
 
+/*#map_part #search_bar input{*/
+    /*position:absolute;*/
+    /*padding-left:20px;*/
+    /*width: 60%;*/
+    /*height: 36px;*/
+    /*background:#fff;*/
+    /*left: calc(20% - 50px);*/
+    /*top:40px;*/
+    /*border: none;*/
+    /*-webkit-border-radius: 3px;*/
+    /*-moz-border-radius: 3px;*/
+    /*border-radius: 3px;*/
+/*}*/
 
+/*#map_part #search_bar #go_search{*/
+    /*position: absolute;*/
+    /*width: 54px;*/
+    /*height: 54px;*/
+    /*background: #fff;*/
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    /*top: 32px;*/
+    /*right: calc(20% + 6px);*/
+/*}*/
+/*#map_part #search_bar #go_search #inside_go{*/
+    /*position: absolute;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    /*left:3px;*/
+    /*top:3px;*/
+    /*border:4px solid #EB004B;*/
+/*}*/
+
+/*#map_part #search_bar #go_search #inside_go h4{*/
+    /*font-family: Lato;*/
+    /*font-weight: bold;*/
+    /*color: #EB004B;*/
+    /*margin:0px;*/
+    /*text-align: center;*/
+    /*margin-top: 10px;*/
+/*}*/
